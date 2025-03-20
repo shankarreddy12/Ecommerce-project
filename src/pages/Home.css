@@ -1,0 +1,205 @@
+/*.home {
+    padding: 20px;
+    position: relative;
+    top: 500px;
+
+}
+.home img{
+    width: 100%;    
+    z-index: 0;
+}
+.banner {
+    background-image: url('../assets/banner.jpg');
+    background-size: 100% 100% ;
+    height: 500px;
+    color: white;
+}
+.banner h1{
+    position: relative;
+    top: 180px;
+    margin-left: 30px;
+    font-size: 40px;
+}
+.banner h3{
+    position: relative;
+    top: 150px;
+    margin-left: 30px;
+    font-size: 30px;
+}
+h2{
+    text-align: center;
+    font-size:xx-large;
+}
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-buttons button {
+    /* padding: 10px 15px; */
+  /*  border: 1px solid #474A4D;
+    background-color:#474A4D  ;
+    border-radius: 7px;
+    cursor: pointer;
+    width: 170px;
+}
+
+.filter-buttons button:hover {
+    background-color: #212529;
+    color: #FFFFFF;
+}
+
+.product-grid {
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px; */
+  /*  display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    
+    
+} */
+
+
+
+/* Home.css */
+
+.home {
+    padding: 20px;
+    position: relative;
+    top: 100px;
+}
+
+.home img {
+    width: 100%;
+    z-index: 0;
+}
+
+.banner {
+    background-image: url('../assets/banner.jpg');
+    background-size: cover; /* Ensure the image covers the entire banner */
+    background-position: center; /* Center the background image */
+    height: 500px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 20px; /* Add padding for better spacing */
+    
+}
+
+.banner h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+.banner h3 {
+    font-size: 30px;
+    margin: 10px 0 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: xx-large;
+    margin: 20px 0; /* Add margin for spacing */
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+}
+
+.filter-buttons button {
+    padding: 10px 15px;
+    border: 1px solid #474A4D;
+    background-color: #474A4D;
+    border-radius: 7px;
+    cursor: pointer;
+    width: 170px;
+    color: white;
+    font-size: 16px;
+}
+
+.filter-buttons button:hover {
+    background-color: #212529;
+    color: #FFFFFF;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 20px; /* Add padding for better spacing */
+    
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+    }
+
+    .banner h1 {
+        font-size: 35px; /* Adjust font size for tablets */
+    }
+
+    .banner h3 {
+        font-size: 25px; /* Adjust font size for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+        top: 400px; /* Adjust top position for smaller screens */
+    }
+
+    .banner {
+        height: 400px; /* Reduce banner height for smaller screens */
+    }
+
+    .banner h1 {
+        font-size: 30px; /* Adjust font size for mobile */
+    }
+
+    .banner h3 {
+        font-size: 20px; /* Adjust font size for mobile */
+    }
+
+    .filter-buttons button {
+        width: 140px; /* Reduce button width for smaller screens */
+        font-size: 14px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 column for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .home {
+        top: 300px; /* Further adjust top position for very small screens */
+    }
+
+    .banner {
+        height: 300px; /* Further reduce banner height */
+    }
+
+    .banner h1 {
+        font-size: 25px; /* Adjust font size for very small screens */
+    }
+
+    .banner h3 {
+        font-size: 16px; /* Adjust font size for very small screens */
+    }
+
+    .filter-buttons button {
+        width: 120px; /* Further reduce button width */
+        font-size: 12px;
+    }
+}

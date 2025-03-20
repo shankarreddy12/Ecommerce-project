@@ -1,0 +1,106 @@
+/* Register.css */
+
+/* General styles */
+ /* body {
+    /* font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0; */
+    /* display: flex;
+    justify-content: center; */
+    /* align-items: center; */
+    /* height: 100vh; */
+  /* }   */
+  /* Register section */
+  .register {
+    /* background-color: #fff;
+     padding: 20px; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center; */
+  
+    
+   padding: 20px;
+   max-width: 800px;
+   margin: 0 auto;
+   position: relative;
+   top: 100px;
+}
+  
+  
+  .register h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .register hr {
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+    margin-bottom: 20px;
+  }
+  
+  /* Form styles */
+  .registerform {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .registerform label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+    text-align: left;
+  }
+  
+  .registerform input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .registerform input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .registerform .link {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .registerform .link p {
+    margin: 0;
+    color: #555;
+  }
+  
+  .registerform .link a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .registerform .link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Button styles */
+  .registerbutton {
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .registerbutton:hover {
+    background-color: #218838;
+  }

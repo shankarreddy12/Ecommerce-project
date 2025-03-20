@@ -1,0 +1,89 @@
+/* Login.css */
+
+/* Center the login container */
+.login {
+    /* max-width: 400px; */
+    /* margin: 50px auto; */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* position: relative;
+    top: 150px; */
+    /* position: fixed; */
+    /* position: relative;
+    bottom: 90px; */ padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    position: relative;
+    top: 200px;
+    
+}
+
+.login h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.login hr {
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+    margin-bottom: 20px;
+}
+
+/* Form group styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-group input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Error message styles */
+.error {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+}
+
+/* Button styles */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.login p a{
+    text-decoration: none;
+    color: #007bff;
+}

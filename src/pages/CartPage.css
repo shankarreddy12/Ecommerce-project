@@ -1,0 +1,132 @@
+/* .cart-page {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+} */
+.cart {
+    /* position: relative; */
+    /* top: 100px; */
+    /* position: fixed; */
+    /* padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    top: 100px; */
+    /* margin: 0 auto; */
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+}
+/* .cart p{
+    text-align: center;
+    font-size: 30px;
+    
+    margin-top: 40px;
+} */
+.continue-shopping-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #1C1D1F;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.continue-shopping-btn:hover {
+    background-color: #34383a;
+}
+.continue-shopping-container p{
+    font-size: 50px;
+    margin-top: 50px;
+}
+.continue-shopping-container{
+    text-align: center;
+}
+
+
+.cart h1 {
+    font-size: 44px;
+    /* margin-bottom: 20px; */
+    text-align: center;
+}
+
+.cart hr{
+    margin: 20px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-right: 20px;
+}
+
+.cart-item .item-details {
+    flex-grow: 1;
+}
+
+.cart-item h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.cart-item p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.quantity-control button {
+    background-color: #1C1D1F;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+
+}
+
+.quantity-control button:hover {
+    background-color: #34383a;
+}
+
+.remove-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 230px;
+}
+
+.remove-btn:hover {
+    background-color: #ff1a1a;
+}
+
+.total-price {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+}
