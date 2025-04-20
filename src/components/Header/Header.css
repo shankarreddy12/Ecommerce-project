@@ -100,124 +100,116 @@ header nav ul li a:hover {
 
 
 
+/* Header Styles */
 header {
-    padding: 15px 0;
+    /* padding: 15px 20px; */
     width: 100%;
-    height: 50px;
+    /* height: 100px; */
+    min-height: 50px;
     display: flex;
-    justify-content: space-between; 
-    align-items: center; 
+    justify-content: space-between;
+    align-items: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: fixed;
-    top: 0; 
-    z-index: 1;
-    overflow: hidden; 
-    background-color:whitesmoke;  
-    
-}
-header nav{
+    top: 0;
+    z-index: 1000;
     background-color: whitesmoke;
-}
-
-header h1 {
-    font-size: 30px;
+    flex-wrap: wrap;
+  }
+  
+  header h1 {
+    font-size: 24px;
     margin: 0;
     color: #181819;
-    margin-left: 20px; 
-}
-
-header nav ul {
+    white-space: nowrap;
+    margin-left: 100px;
+  }
+  
+  header nav {
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+  }
+  
+  header nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-
-}
-
-header nav ul li {
-    font-size: 20px;
-    margin-right: 10px;
-    margin-left: 20px; 
-    
-}
-
-
-header nav ul li a {
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  header nav ul li {
+    font-size: 16px;
+    margin: 0 10px;
+  }
+  
+  header nav ul li a {
     color: #7C7C7D;
     text-decoration: none;
-    padding: 10px;
+    padding: 8px 12px;
     transition: color 0.3s ease;
-}
-
-header nav ul li a:hover {
+    display: inline-block;
+    white-space: nowrap;
+  }
+  
+  header nav ul li a:hover {
     color: black;
     text-decoration: none;
-}
-
-.Login, .Cart, .Register {
+  }
+  
+  /* Button Styles */
+   .Logout {
     border: 1px solid gray;
-    width: 100px;
-    height: 30px;
+    padding: 8px 15px;
     text-align: center;
-    line-height: 30px; 
+    line-height: normal;
     border-radius: 7px;
-    margin-right: 20px; 
-}
-
-.Register {
-    width: 150px; 
-}
- 
-@media (max-width: 768px) {
-    header {
-        height: auto; 
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    header h1 {
-        margin-left: 0;
-        margin-bottom: 10px;
-    }
-
-    header nav ul {
-        flex-direction: column; 
-        align-items: center;
-    }
-
-    header nav ul li {
-        margin: 5px 0; 
-    }
-
-    .Login, .Cart, .Register {
-        margin: 5px 0;
-    }
-} 
-
-.user-info, .Logout{
-    color: grey;
-}
-.user-info, .Logout:hover{
-    color: black;
-}
-.Logout{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    min-width: 80px;
+    height: auto;
+  }
+  .Login,.Register,.Cart{
     border: 1px solid gray;
     border-radius: 8px;
     text-align: center;
-    width: 100px;
     align-content: center;
-}
-
-
-
-/* Add to your Header.css */
-.notifications-link {
+  }
+  
+  .Register {
+    min-width: 120px;
+    
+  }
+  
+  .Logout {
+    cursor: pointer;
+    background: none;
+    color: grey;
+  }
+  
+  .Logout:hover {
+    color: black;
+    border-color: black;
+  }
+  
+  .user-info {
+    color: grey;
+    padding: 0 10px;
+    white-space: nowrap;
+  }
+  
+  /* Notification Styles */
+  .notifications-link {
     position: relative;
     display: flex;
     align-items: center;
-}
-
-.notification-badge {
+  }
+  
+  .notification-badge {
     position: absolute;
     top: -8px;
     right: -8px;
@@ -230,4 +222,48 @@ header nav ul li a:hover {
     justify-content: center;
     align-items: center;
     font-size: 0.7em;
-}
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      padding: 10px;
+      height: auto;
+    }
+  
+    header h1 {
+      margin-bottom: 10px;
+      margin-left: 0;
+    }
+  
+    header nav {
+      width: 100%;
+    }
+  
+    header nav ul {
+      flex-direction: column;
+      width: 100%;
+      gap: 8px;
+    }
+  
+    header nav ul li {
+      width: 100%;
+      margin: 0;
+      text-align: center;
+    }
+  
+    .Login, .Cart, .Register, .Logout {
+      width: 100%;
+      margin: 5px 0;
+      box-sizing: border-box;
+    }
+  
+    .user-info {
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 5px;
+    }
+  }
