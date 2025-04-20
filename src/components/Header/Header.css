@@ -267,3 +267,15 @@ header {
       margin-bottom: 5px;
     }
   }
+  @media (max-width: 480px) {
+    .notifications-link{
+          position: relative;
+         left: 46%; 
+         
+    }
+    .Register,.Login,.Cart,.Logout{
+        width: 80%;
+    }
+
+    
+  }

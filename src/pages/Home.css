@@ -118,7 +118,8 @@ h2 {
 
 @media (max-width: 480px) {
     .home {
-        top: 300px; /* Further adjust top position for very small screens */
+        top: 590px;
+        margin-top: 20px; /* Further adjust top position for very small screens */
     }
 
     .banner {

@@ -111,7 +111,7 @@ h2 {
 
 @media (max-width: 480px) {
     .home{
-        top:380px;
+        top:420px;
     }
     h2 {
         font-size: x-large; /* Adjust heading size for very small screens */
