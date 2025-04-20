@@ -89,10 +89,10 @@ const App = () => {
             <NotificationsProvider>
                 <Header />
                 <Routes>
-                    <Route path="/login" element={<Login />} />
+                    <Route path="login" element={<Login />} />
                     <Route path="/register" element={<Register />} />
                     
-                    <Route path="/" element={
+                    <Route path="/Home" element={
                         <ProtectedRoute>
                             <Home />
                         </ProtectedRoute>

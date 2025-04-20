@@ -91,7 +91,7 @@ const Header = () => {
             <h1>Ecommerce</h1>
             <nav>
                 <ul>
-                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/Home">Home</Link></li>
                     <li><Link to='/products'>Products</Link></li>
                     <li><Link to="/about">About</Link></li>
                     <li><Link to="/contact">Contact</Link></li>
@@ -116,7 +116,7 @@ const Header = () => {
                         </>
                     ) : (
                         <>
-                            <li className='Login'><Link to="/login">
+                            <li className='Login'><Link to="/Login">
                                 <GrLogin />
                                 Login</Link>
                             </li>
