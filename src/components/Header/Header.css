@@ -1,17 +1,15 @@
-header {
+/* header {
     padding: 15px 0;
     width: 100%;
-    height: 50px; /* Fixed height */
+    height: 50px; 
     display: flex;
     justify-content:space-around; 
-    /* Space out items */
-    align-items: center; /* Center items vertically */
-    /* background-color: #f3f4f5; */
+    align-items: center; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: fixed;
-    top: 0; /* Stick to the top */
+    top: 0; 
     z-index: 1;
-    overflow: hidden; /* Hide overflow */
+    overflow: hidden; 
     background-color:whitesmoke;  
     
 }
@@ -23,7 +21,6 @@ header h1 {
     font-size: 30px;
     margin: 0;
     color: #181819;
-    /* margin-left: 10px; Reduced margin */
 }
 
 header nav ul {
@@ -35,8 +32,8 @@ header nav ul {
 
 header nav ul li {
     font-size: 20px;
-    /* margin-right: 10px; */
-    margin-left: 10px; /* Reduced margin */
+    
+    margin-left: 10px; 
     position: relative;
     right: 90px;
 }
@@ -49,7 +46,6 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    /* color: #f3f4f5; */
     color: black;
 }
 .Login,.Register,.Cart{
@@ -59,11 +55,10 @@ header nav ul li a:hover {
     left: 15px;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     header {
-        height: auto; /* Allow header to expand */
-        flex-direction: column; /* Stack items vertically */
+        height: auto; 
+        flex-direction: column;
         padding: 10px;
     }
 
@@ -73,15 +68,166 @@ header nav ul li a:hover {
     }
 
     header nav ul {
-        flex-direction: column; /* Stack nav items vertically */
+        flex-direction: column;  
         align-items: center;
     }
 
     header nav ul li {
-        margin: 5px 0; /* Adjust margins for stacked items */
+        margin: 5px 0; 
     }
 
     .Login, .Cart, .Register {
-        margin: 5px 0; /* Adjust button margins */
+        margin: 5px 0; 
     }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+header {
+    padding: 15px 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0; 
+    z-index: 1;
+    overflow: hidden; 
+    background-color:whitesmoke;  
+    
+}
+header nav{
+    background-color: whitesmoke;
+}
+
+header h1 {
+    font-size: 30px;
+    margin: 0;
+    color: #181819;
+    margin-left: 20px; 
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+header nav ul li {
+    font-size: 20px;
+    margin-right: 10px;
+    margin-left: 20px; 
+    
+}
+
+
+header nav ul li a {
+    color: #7C7C7D;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.Login, .Cart, .Register {
+    border: 1px solid gray;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px; 
+    border-radius: 7px;
+    margin-right: 20px; 
+}
+
+.Register {
+    width: 150px; 
+}
+ 
+@media (max-width: 768px) {
+    header {
+        height: auto; 
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    header h1 {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    header nav ul {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 5px 0; 
+    }
+
+    .Login, .Cart, .Register {
+        margin: 5px 0;
+    }
+} 
+
+.user-info, .Logout{
+    color: grey;
+}
+.user-info, .Logout:hover{
+    color: black;
+}
+.Logout{
+    border: 1px solid gray;
+    border-radius: 8px;
+    text-align: center;
+    width: 100px;
+    align-content: center;
+}
+
+
+
+/* Add to your Header.css */
+.notifications-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.notification-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7em;
 }

@@ -112,3 +112,10 @@
     font-weight: bold;
     text-align: right;
 }
+
+@media (max-width:480px) {
+    .cart{
+        top:380px
+    }
+    
+}
