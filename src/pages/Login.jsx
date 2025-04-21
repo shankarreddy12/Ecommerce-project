@@ -185,7 +185,7 @@ const Login = () => {
                     login({ username, email });
 
 
-                    navigate('/');
+                    navigate('/Home');
                 } else {
                     setLoginError('Invalid username/email or password');
                 }
